@@ -1,70 +1,51 @@
 # Weekly Plan
 
-## Week 1 — JavaScript Foundations + Shell / Terminal / Environment
-- [ ] Understand terminal vs shell, absolute vs relative paths, environment variables
-- [ ] Master JS data types, variables (let/const), type coercion
-- [ ] Master control flow: if/else, ternary, switch, for, while, for...of
-- [ ] Practice array methods: map, filter, find, reduce, some, every
-- [ ] Work with objects: access, destructure, spread, nested
-- [ ] Parse and manipulate JSON
-- [ ] Complete lead data normalization exercise
-- [ ] Build JSON file transformation pipeline
-- [ ] Review and revise submissions
+Planning unit: content blocks per session. Adjust density based on actual pace.
 
-## Week 2 — HTTP, REST, APIs, Status Codes, Headers + Python Fundamentals
-- [ ] Learn HTTP methods (GET/POST/PUT/PATCH/DELETE) and when to use each
-- [ ] Understand status codes: 2xx, 4xx, 5xx — what each means
-- [ ] Understand headers: Content-Type, Authorization, Accept
-- [ ] Learn REST conventions: resources, endpoints, CRUD mapping
-- [ ] Learn Python basics: types, functions, lists, dicts, list comprehensions
-- [ ] Use Python requests library for API calls and JSON handling
-- [ ] JS: fetch and process data from a public API
-- [ ] Python: write API integration script
-- [ ] Review and revise submissions
+## Week 1 — JavaScript Foundations + Shell / Terminal / Environment
+- [ ] Block A: Terminal, shell, paths, environment variables
+- [ ] Block B: JS core — variables, types, let/const, coercion, control flow
+- [ ] Block C: Array methods — filter, map, find, reduce, some, every (10-question drills each)
+- [ ] Block D: Objects + JSON — access, destructuring, spread, parse, stringify (10-question drill)
+- [ ] Block E: Applied coding — lead normalizer + data pipeline (fs module)
+- [ ] Block F: 2-hour practice block — mixed drills, timed exercises, memorization
+
+## Week 2 — HTTP, REST, APIs + Python Fundamentals
+- [ ] Block A: HTTP methods, status codes, headers, request body vs query params
+- [ ] Block B: REST conventions, API calls in JS (fetch)
+- [ ] Block C: Python basics — types, functions, lists, dicts, list comprehensions, requests library
+- [ ] Block D: Drills — HTTP, API parsing, Python basics (10 questions each)
+- [ ] Block E: Applied coding — API fetch (JS) + API script (Python)
+- [ ] Block F: 2-hour practice block — mixed JS + Python drills, API debugging
 
 ## Week 3 — SQL Deep Dive
-- [ ] Understand table, row, column, primary key, foreign key
-- [ ] Learn schema design and SQL data types
-- [ ] Understand validation: NOT NULL, UNIQUE, CHECK
-- [ ] Learn normalization concepts (1NF, 2NF, 3NF)
-- [ ] Practice SELECT, WHERE, ORDER BY, LIMIT, JOIN
-- [ ] Practice INSERT, UPDATE, DELETE, upsert
-- [ ] Practice aggregate functions: COUNT, SUM, AVG, GROUP BY, HAVING
-- [ ] Identify and handle duplicate records
-- [ ] Design a schema for a business scenario
-- [ ] Build data validation + insertion pipeline (JS or Python + SQLite)
-- [ ] Review and revise submissions
+- [ ] Block A: Table, row, column, primary key, foreign key, schema, data types
+- [ ] Block B: Constraints (NOT NULL, UNIQUE, CHECK), normalization (1NF, 2NF, 3NF)
+- [ ] Block C: Queries — SELECT, WHERE, JOIN, GROUP BY, HAVING, INSERT, UPDATE, DELETE
+- [ ] Block D: Dedup, upsert, schema design for business scenarios
+- [ ] Block E: Drills — queries, schema design, dedup+upsert (10 questions each)
+- [ ] Block F: Applied coding — messy CSV cleanup + data validation pipeline
+- [ ] Block G: 2-hour practice block — timed SQL writing, schema design under pressure
 
-## Week 4 — Webhooks + Auth + Reliability Basics
-- [ ] Understand webhooks vs polling
-- [ ] Parse and validate webhook payloads
-- [ ] Learn auth concepts: API keys, bearer tokens, JWT, OAuth2
-- [ ] Decode a JWT and read its claims
-- [ ] Implement retry with exponential backoff
-- [ ] Implement fallback logic
-- [ ] Understand and implement idempotency checks
-- [ ] Learn structured logging basics
-- [ ] Build webhook payload handler with routing and logging
-- [ ] Build reliable API caller with retry + backoff + fallback
-- [ ] Review and revise submissions
+## Week 4 — Webhooks + Auth + Reliability
+- [ ] Block A: Webhooks vs polling, payload parsing, signature verification
+- [ ] Block B: Auth — API keys, bearer tokens, JWT structure, OAuth2 flow
+- [ ] Block C: Reliability — retry, backoff, fallback, idempotency
+- [ ] Block D: Logging + debugging basics
+- [ ] Block E: Drills — webhooks, auth, retry+idempotency (10 questions each)
+- [ ] Block F: Applied coding — webhook handler + reliable API caller
+- [ ] Block G: 2-hour practice block — mixed reliability drills, debugging exercises
 
 ## Week 5 — End-to-End Automation Build
-- [ ] Design a multi-step automation pipeline on paper
-- [ ] Build: webhook trigger → validate → transform → API call → store → output
-- [ ] Add retry and error handling to each step
-- [ ] Handle partial failures (some records succeed, some fail)
-- [ ] Log every step of the pipeline
-- [ ] Test with edge cases and document results
-- [ ] Polish into mini-04-e2e-automation project
-- [ ] Review and revise submissions
+- [ ] Block A: Pipeline design — data flow, error boundaries, state management
+- [ ] Block B: Build full pipeline — webhook → validate → transform → API → store → output
+- [ ] Block C: Add reliability — retry, logging, partial failure handling, summary report
+- [ ] Block D: Drills — pipeline tracing, error boundaries (10 questions each)
+- [ ] Block E: 2-hour practice block — timed builds, debugging broken pipelines
 
 ## Week 6 — Documentation, Handoff, Training + Portfolio Polish
-- [ ] Write README for week 5 project
-- [ ] Write SETUP guide (environment, dependencies, configuration)
-- [ ] Write RUNBOOK (operate, monitor, restart)
-- [ ] Write TROUBLESHOOTING note (failure modes and fixes)
-- [ ] Write HANDOFF note (key decisions, what to watch for)
-- [ ] Refactor week 5 code for clarity
-- [ ] Assemble documentation bundle in mini-05-documentation-bundle
-- [ ] Polish all 6 portfolio artifacts into submissions/portfolio/
-- [ ] Final review of all work
+- [ ] Block A: Documentation skills — README, setup guide, runbook, handoff note
+- [ ] Block B: Write full documentation bundle for week 5 project
+- [ ] Block C: Refactor week 5 code for clarity and delivery quality
+- [ ] Block D: Drills — documentation writing, code reading (10 questions each)
+- [ ] Block E: 2-hour practice block — timed writing, mock handoff, final portfolio review

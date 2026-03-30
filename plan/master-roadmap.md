@@ -1,31 +1,40 @@
 # Master Roadmap — 6-Week Automation Engineering Program
 
+Planning unit: content blocks per session (not days). Adjust density based on actual pace.
+
 ---
 
 ## Week 1: JavaScript Foundations + Shell / Terminal / Environment
 
-### Concepts
+### Block A: Environment Basics
 - Terminal vs shell (bash, PowerShell, cmd)
 - Absolute vs relative paths
 - Environment variables and PATH
-- JavaScript: variables, data types, let/const, type coercion
+
+### Block B: JS Core
+- Variables, data types, let/const, type coercion
 - Control flow: if/else, ternary, switch, for, while, for...of
-- Arrays: access, iterate, mutate
-- Objects: access, destructure, spread
-- JSON: parse, stringify, nested access
+- Truthy/falsy values
 
-### Drills
-- Variable declaration and type checking
-- Conditionals and loops
-- Array methods: `.map()`, `.filter()`, `.find()`, `.reduce()`, `.some()`, `.every()`
-- Object manipulation: access, destructure, merge, nested access
-- JSON parsing and field extraction
+### Block C: Arrays + Array Methods
+- `.filter()`, `.map()`, `.find()`, `.reduce()`, `.some()`, `.every()`
+- 10-question drill per method group (5 basic + 5 variant)
+- Memorization passes until independent fluency
 
-### Coding task
-Clean and normalize a batch of lead records: trim whitespace, lowercase emails, validate required fields, split into `{ cleaned: [], rejected: [] }`
+### Block D: Objects + JSON
+- Object access, destructuring, spread operator
+- JSON: parse, stringify, nested access, missing key handling
+- 10-question drill (5 basic + 5 variant)
 
-### Automation task
-Build a data pipeline script: read a JSON file → validate each record → transform fields → write cleaned output to a new file
+### Block E: Applied Coding
+- Exercise: clean and normalize lead data using filter + map
+- Exercise: data pipeline — read JSON → validate → transform → write output
+- New skill: `fs` module (file I/O)
+
+### Block F: Practice Block (~2 hours)
+- Mixed drills across all Block A–D skills
+- Timed exercises and memorization
+- New-scenario drills to test independent application
 
 ### Deliverables
 - `submissions/week-01/exercise-01-lead-normalizer.js`
@@ -33,37 +42,46 @@ Build a data pipeline script: read a JSON file → validate each record → tran
 - `feedback/week-01/` review notes
 
 ### Mastery criteria
-- Can declare variables and explain let vs const
-- Can use `.map()`, `.filter()`, `.reduce()` correctly without looking up syntax
-- Can parse JSON, access nested fields, and handle missing keys
-- Can read an error message and identify whether it is a type error, reference error, or syntax error
-- Lead normalizer handles edge cases: empty strings, missing fields, duplicate emails
+- Use .filter(), .map(), .reduce() without reference
+- Parse JSON and handle missing keys
+- Identify error types from error messages
+- Can write a complete data cleaning function independently in a new scenario
 
 ---
 
 ## Week 2: HTTP, REST, APIs, Status Codes, Headers + Python Fundamentals
 
-### Concepts
+### Block A: HTTP Fundamentals
 - HTTP methods: GET, POST, PUT, PATCH, DELETE — when to use each
 - Status codes: 2xx success, 4xx client error, 5xx server error
 - Headers: Content-Type, Authorization, Accept
 - Request body vs query parameters
-- REST API conventions: resources, endpoints, CRUD mapping
-- Python basics: variables, types, functions, lists, dicts, tuples
-- Python for automation: file I/O, `json` module, `requests` library
 
-### Drills
-- Match HTTP methods to CRUD operations
-- Read a status code and explain what went wrong
-- Parse API response payloads (JS)
-- Python: list comprehensions, dict operations, function writing
-- Python: read/write JSON files, make HTTP requests with `requests`
+### Block B: REST + API Calls in JS
+- REST conventions: resources, endpoints, CRUD mapping
+- Making API calls with fetch or node-fetch
+- Reading and parsing API responses
+- Error handling for API calls
 
-### Coding task
-JS: Fetch data from a public API, extract specific fields, handle errors, format output as clean JSON
+### Block C: Python Fundamentals
+- Variables, types, functions, lists, dicts, tuples
+- List comprehensions, dict operations
+- File I/O, `json` module
+- `requests` library for API calls
 
-### Automation task
-Python: Write a script that calls an API → parses the response → filters/transforms records → saves structured results to a file
+### Block D: Drills (10 each)
+- HTTP methods + status codes drill (5 basic + 5 variant)
+- API response parsing drill (5 basic + 5 variant)
+- Python basics drill (5 basic + 5 variant)
+
+### Block E: Applied Coding
+- JS: Fetch from public API, extract fields, handle errors, format output
+- Python: Call API → parse response → filter/transform → save to file
+
+### Block F: Practice Block (~2 hours)
+- Mixed JS + Python drills
+- API debugging exercises (given broken requests, find the bug)
+- Timed coding challenges
 
 ### Deliverables
 - `submissions/week-02/exercise-01-api-fetch.js`
@@ -71,42 +89,50 @@ Python: Write a script that calls an API → parses the response → filters/tra
 - `feedback/week-02/` review notes
 
 ### Mastery criteria
-- Can explain GET vs POST vs PUT vs PATCH vs DELETE with real examples
-- Can read a 401, 403, 404, 429 status and explain the cause
-- Can construct an API request with correct headers and body
-- Can write a Python function that takes input, processes it, and returns output
-- Python script handles: missing keys in response, non-200 status, file write errors
+- Explain GET vs POST vs PUT vs PATCH vs DELETE with real examples
+- Read a 401, 403, 404, 429 status and explain the cause
+- Construct an API request with correct headers and body
+- Write a Python function that takes input, processes it, and returns output
+- Python script handles: missing keys, non-200 status, file write errors
 
 ---
 
 ## Week 3: SQL Deep Dive
 
-### Concepts
-- Table, row, column, primary key — what each means and why
+### Block A: Foundations
+- Table, row, column, primary key, foreign key
 - Schema: defining structure before data exists
-- Data types in SQL: TEXT, INTEGER, BOOLEAN, TIMESTAMP
+- Data types: TEXT, INTEGER, BOOLEAN, TIMESTAMP
+
+### Block B: Constraints + Normalization
 - Validation: NOT NULL, UNIQUE, CHECK constraints
-- Normalization: why split data into multiple tables (1NF, 2NF, 3NF conceptual)
-- Deduplication: identifying and handling duplicate records
-- Upsert: INSERT ... ON CONFLICT UPDATE (PostgreSQL syntax)
+- Normalization: 1NF, 2NF, 3NF (conceptual, with concrete examples)
+- Why split data into multiple tables
+
+### Block C: Queries
 - SELECT, WHERE, ORDER BY, LIMIT
 - JOIN: INNER JOIN, LEFT JOIN — when and why
-- INSERT, UPDATE, DELETE
 - Aggregate functions: COUNT, SUM, AVG, GROUP BY, HAVING
+- INSERT, UPDATE, DELETE
 
-### Drills
-- Write SELECT queries with WHERE, ORDER BY, LIMIT
-- Write JOIN queries across 2 tables
-- Write INSERT and UPDATE statements
-- Write an upsert statement
-- Identify duplicate records with GROUP BY + HAVING
-- Design a simple schema for a given business scenario
+### Block D: Advanced Operations
+- Deduplication: identify duplicates with GROUP BY + HAVING
+- Upsert: INSERT ... ON CONFLICT UPDATE
+- Schema design for a business scenario
 
-### Coding task
-Given a messy CSV of contact records: write SQL to create the schema, insert records, deduplicate by email, and query for specific segments (e.g., all contacts from a certain domain, contacts missing phone numbers)
+### Block E: Drills (10 each)
+- SELECT + WHERE + JOIN drill (5 basic + 5 variant)
+- Schema design drill (5 basic + 5 variant)
+- Dedup + upsert drill (5 basic + 5 variant)
 
-### Automation task
-Build a JS or Python script that: reads raw data → validates against schema rules → inserts into SQLite → runs dedup logic → exports clean results
+### Block F: Applied Coding
+- Given messy CSV: create schema, insert, deduplicate by email, query segments
+- JS or Python script: read raw data → validate → insert into SQLite → dedup → export
+
+### Block G: Practice Block (~2 hours)
+- Timed SQL query writing
+- Schema design under time pressure
+- Mixed drill: given a business scenario, design schema + write queries
 
 ### Deliverables
 - `submissions/week-03/exercise-01-sql-queries.sql`
@@ -115,40 +141,50 @@ Build a JS or Python script that: reads raw data → validates against schema ru
 - `feedback/week-03/` review notes
 
 ### Mastery criteria
-- Can design a 2-3 table schema with primary keys and foreign keys
-- Can write SELECT with WHERE, JOIN, GROUP BY without reference
-- Can explain why normalization matters with a concrete example
-- Can write an upsert and explain when it is needed
-- Can identify duplicates in a dataset using SQL
-- Data pipeline script validates input before inserting
+- Design a 2-3 table schema with primary keys and foreign keys
+- Write SELECT with WHERE, JOIN, GROUP BY without reference
+- Explain normalization with a concrete example
+- Write an upsert and explain when it is needed
+- Identify duplicates in a dataset using SQL
 
 ---
 
 ## Week 4: Webhooks + Auth + Reliability Basics
 
-### Concepts
-- Webhooks: how event-driven push works vs polling
-- Webhook payloads: parsing, validating required fields, signature verification (conceptual)
-- Auth: API keys, bearer tokens, JWT structure (header.payload.signature), OAuth2 flow (conceptual)
+### Block A: Webhooks
+- How event-driven push works vs polling
+- Webhook payloads: parsing, validating required fields
+- Signature verification (conceptual)
+
+### Block B: Auth
+- API keys, bearer tokens
+- JWT structure: header.payload.signature
+- OAuth2 flow (conceptual)
+
+### Block C: Reliability
 - Retry: why requests fail, when to retry, max attempts
 - Backoff: linear vs exponential, jitter
-- Fallback: what to do when retries are exhausted
-- Idempotency: why the same request twice should not create duplicate effects
-- Logging: what to log (input, output, errors, timing), structured logging basics
-- Debugging: reading error messages, stack traces, using console/print for tracing
+- Fallback: what to do when retries exhausted
+- Idempotency: why same request twice should not create duplicates
 
-### Drills
-- Parse a webhook payload and extract event type + relevant fields
-- Construct an Authorization header with a bearer token
-- Decode a JWT payload (base64) and read the claims
-- Write a retry function with exponential backoff
-- Write a function that logs input, output, and errors in structured format
+### Block D: Logging + Debugging
+- What to log: input, output, errors, timing
+- Structured logging basics
+- Reading error messages, stack traces
 
-### Coding task
-Build a webhook payload handler: receive event JSON → validate required fields → route to different handlers based on event type → log every step
+### Block E: Drills (10 each)
+- Webhook payload parsing drill (5 basic + 5 variant)
+- Auth header construction drill (5 basic + 5 variant)
+- Retry + idempotency drill (5 basic + 5 variant)
 
-### Automation task
-Build a reliable API caller: make a request → if it fails, retry with exponential backoff → if retries exhausted, log failure and execute fallback → ensure idempotency by checking for duplicate event IDs
+### Block F: Applied Coding
+- Webhook handler: receive JSON → validate → route by event type → log every step
+- Reliable API caller: request → retry with exponential backoff → fallback → idempotency check
+
+### Block G: Practice Block (~2 hours)
+- Mixed reliability drills
+- Debugging exercises: find bugs in broken webhook handlers
+- Timed implementation: write retry logic from scratch
 
 ### Deliverables
 - `submissions/week-04/exercise-01-webhook-handler.js`
@@ -156,45 +192,48 @@ Build a reliable API caller: make a request → if it fails, retry with exponent
 - `feedback/week-04/` review notes
 
 ### Mastery criteria
-- Can explain webhook vs polling with a real scenario
-- Can parse a JWT without a library and explain each part
-- Can implement retry with exponential backoff from scratch
-- Can explain idempotency and why it matters for webhooks
+- Explain webhook vs polling with a real scenario
+- Parse a JWT without a library and explain each part
+- Implement retry with exponential backoff from scratch
+- Explain idempotency and why it matters for webhooks
 - Webhook handler validates input and logs every decision point
-- Reliable API caller handles: timeout, 429, 500, network error
 
 ---
 
 ## Week 5: End-to-End Automation Build
 
-### Concepts
+### Block A: Pipeline Design
 - Composing multiple skills into one pipeline
 - Data flow: trigger → validate → transform → call → store → output
 - Error boundaries: where to catch, where to let fail
+
+### Block B: Implementation
+- Build: webhook trigger → validate → transform → API call → store in SQLite → output summary
+- Add reliability: retry failed calls, log every step, handle partial failures
+
+### Block C: Testing + Edge Cases
+- Manual verification, edge case testing
 - State management: tracking what has been processed
-- Testing your automation: manual verification, edge case testing
+- Summary report: what succeeded, what failed
 
-### Drills
-- Trace data through a multi-step pipeline on paper
-- Identify where errors could occur in a given pipeline diagram
-- Write validation functions for different input shapes
-- Write transform functions that normalize between two different API schemas
+### Block D: Drills (10 each)
+- Pipeline tracing drill (5 basic + 5 variant)
+- Error boundary drill (5 basic + 5 variant)
 
-### Coding task
-Build: webhook trigger → validate payload → transform data → call external API → store result in SQLite → output summary or send notification (console/file)
-
-### Automation task
-Add reliability to the pipeline: retry failed API calls, log every step, handle partial failures (some records succeed, some fail), produce a summary report of what succeeded and what failed
+### Block E: Practice Block (~2 hours)
+- Timed end-to-end builds
+- Debugging broken pipelines
+- Adding features to existing pipelines under time pressure
 
 ### Deliverables
-- `submissions/week-05/e2e-automation.js` (or split into modules)
-- `submissions/week-05/test-scenarios.md` (edge cases tested and results)
+- `submissions/week-05/e2e-automation.js`
+- `submissions/week-05/test-scenarios.md`
 - `projects/mini-04-e2e-automation/` — polished version
 - `feedback/week-05/` review notes
 
 ### Mastery criteria
 - Pipeline runs end-to-end without manual intervention
-- Handles at least 3 failure scenarios gracefully (bad input, API down, DB write error)
+- Handles at least 3 failure scenarios gracefully
 - Every step logs what it received and what it produced
 - Partial failures do not crash the whole pipeline
 - Can explain the data flow from trigger to output without looking at code
@@ -203,30 +242,29 @@ Add reliability to the pipeline: retry failed API calls, log every step, handle 
 
 ## Week 6: Documentation, Handoff, Training + Portfolio Polish
 
-### Concepts
-- README: what it covers, who it is for, what makes a good one
-- Setup guide: environment requirements, install steps, configuration
-- Runbook: how to operate, monitor, and troubleshoot the automation
-- Troubleshooting note: common failure modes and how to resolve them
-- Training/handoff note: what a new person needs to know to take over
+### Block A: Documentation Skills
+- README: what it covers, who it is for
+- Setup guide: environment, install, configuration
+- Runbook: operate, monitor, troubleshoot
+- Training/handoff note: what a new person needs to take over
+
+### Block B: Writing Practice
+- Write README for week 5 project
+- Write setup guide, runbook, troubleshooting note, handoff note
+- Peer-review exercise: read own code from week 1, document what is unclear
+
+### Block C: Code Refactoring
+- Refactor week 5 project for clarity: rename, comment non-obvious logic, consistent error handling
 - Delivery quality: the difference between "it works" and "it is ready to hand off"
 
-### Drills
-- Write a README for one of your earlier projects from scratch
-- Write a troubleshooting section: given 3 failure scenarios, document cause and fix
-- Write a setup guide for your week 5 project
-- Peer-review exercise: read your own code from week 1 and document what is unclear
+### Block D: Drills (10 each)
+- Documentation writing drill (5 basic + 5 variant)
+- Code reading + explanation drill (5 basic + 5 variant)
 
-### Coding task
-Go back to your week 5 project and refactor for clarity: rename unclear variables, add minimal comments where logic is non-obvious, ensure consistent error handling
-
-### Automation task
-Create a complete documentation bundle for your week 5 project:
-1. README.md — what it does, how to run it, what it depends on
-2. SETUP.md — step-by-step environment and dependency setup
-3. RUNBOOK.md — how to operate, what to monitor, how to restart
-4. TROUBLESHOOTING.md — known failure modes and fixes
-5. HANDOFF.md — what a new person needs to know, key decisions made, what to watch for
+### Block E: Practice Block (~2 hours)
+- Timed documentation writing
+- Mock handoff exercise: explain a project to a "new team member" (the tutor asks questions)
+- Final review of all portfolio artifacts
 
 ### Deliverables
 - `projects/mini-05-documentation-bundle/README.md`
@@ -234,22 +272,19 @@ Create a complete documentation bundle for your week 5 project:
 - `projects/mini-05-documentation-bundle/RUNBOOK.md`
 - `projects/mini-05-documentation-bundle/TROUBLESHOOTING.md`
 - `projects/mini-05-documentation-bundle/HANDOFF.md`
-- `submissions/week-06/refactored-project/` — cleaned week 5 code
+- `submissions/week-06/refactored-project/`
 - `feedback/week-06/` review notes
 
 ### Mastery criteria
 - README is understandable by someone who has never seen the project
-- Setup guide works: following it from scratch produces a running system
+- Setup guide works: following from scratch produces a running system
 - Runbook covers: normal operation, monitoring, restart procedure
 - Troubleshooting covers at least 3 real failure modes encountered during development
 - Handoff note explains key design decisions, not just instructions
-- Code refactor improves clarity without changing behavior
 
 ---
 
 ## Final Portfolio Outputs
-
-By the end of week 6, the student should have these 6 concrete artifacts:
 
 | # | Artifact | Source | Location |
 |---|----------|--------|----------|
@@ -260,5 +295,5 @@ By the end of week 6, the student should have these 6 concrete artifacts:
 | 5 | End-to-end automation project | Week 5 | `projects/mini-04-e2e-automation/` |
 | 6 | Documentation bundle (README + runbook + handoff) | Week 6 | `projects/mini-05-documentation-bundle/` |
 
-Each artifact should be polished enough to show in a job interview or include in a portfolio.
+Each artifact should be polished enough to show in a job interview.
 Final polished versions go in `submissions/portfolio/`.

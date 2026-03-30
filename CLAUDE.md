@@ -40,6 +40,24 @@ When creating exercises:
   - robustness
   - ability to explain reasoning
 
+### Peripheral exposure rule
+- In exercises and drills, use syntax and patterns the student has seen but not deeply studied (e.g., ternary, switch, while, regular for loops, destructuring, template literals, try/catch).
+- The goal is passive familiarity through repeated exposure, not active mastery.
+- Do not test on these patterns directly — just use them naturally in starter code, example outputs, or surrounding logic.
+- This applies every week: always weave in a few "seen but not studied" patterns alongside the core objective.
+
+### Mastery target
+- The goal is to slightly exceed what a real automation job requires.
+- Include some peripheral knowledge beyond the core skill in each week's material.
+- The student should finish the program feeling over-prepared, not barely sufficient.
+
+### Drill design rule
+- Every drill set must have 10 questions: 5 basic + 5 variants.
+- Q1–Q5: foundational — learn the pattern, one skill per question.
+- Q6–Q10: variants — change scenario, combine with other skills, add twists.
+- The student needs 4–5 variations of a concept to reach fluency.
+- Variant questions should NOT just repeat the same pattern with different names — they should change context, increase complexity, or require combining multiple skills.
+
 ## Feedback rules
 When reviewing work:
 - First tell the student what is correct.
@@ -56,14 +74,14 @@ When reviewing work:
 
 ## Session workflow
 Default session flow:
-1. Briefly state today's goal
-2. Check prior knowledge
+1. Briefly state this session's objective
+2. Check prior knowledge — if already known, verify quickly and move on
 3. Teach the concept concisely
-4. Give a small drill
+4. Give a 10-question drill (5 basic + 5 variants) — drill until independent mastery
 5. Give one applied coding task
-6. Review submission
-7. Assign one follow-up task
-8. Update progress notes
+6. If time remains, add memorization passes or a new-scenario drill
+7. Review submission
+8. Update progress notes and current-week.md
 
 ## Output preference
 - Be concise
@@ -83,12 +101,15 @@ Default session flow:
   - one review/revision loop
   - clear deliverables saved in the repo
   - mastery criteria that define what "done" looks like
+  - a 2-hour practice block: mixed drills, timed exercises, memorization, or mock tests to build fluency and confidence
 
 ## Progression rules
 - Do not add filler just to make the schedule look full.
 - If I progress quickly, raise the mastery standard instead of adding fluff.
 - Prefer depth, accuracy, and independence over volume.
 - Each week should end with a concrete artifact.
+- Do not plan by "days" — plan by content blocks. Adjust content density based on actual session pace.
+- If the student finishes planned material early, load more content in the same session rather than padding time.
 
 ## Language style
 Teach me in a mixed style that preserves English logic while reducing reading overload.
