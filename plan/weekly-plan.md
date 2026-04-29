@@ -18,7 +18,7 @@ Planning unit: content blocks per session. Adjust density based on actual pace.
 - [x] Block E: Drills — list comp ✓, dict comp ✓, list comp memorization ✓, Block B mini drill ✓, file I/O + built-ins ✓, file I/O memorization ✓, error handling ✓, API basics ✓
 - [x] Block F: Applied coding — real API script ✓, Week 1 Exercise 03 rewrite ✓, JS fetch side-by-side ✓
 - [x] Block G: 2-hour practice block — mixed Python drills, API debugging, memorization, speed round
-- [ ] Push Week 1 + Week 2 deliverables to GitHub with README
+- [x] Push Week 1 + Week 2 deliverables to GitHub with README
 
 ## Week 3 — SQL Deep Dive
 - [ ] Block A: Table, row, column, primary key, foreign key, schema, data types

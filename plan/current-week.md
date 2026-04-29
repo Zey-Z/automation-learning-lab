@@ -120,7 +120,7 @@
 
 ## Week: 2
 ## Focus: HTTP, REST, APIs + Python as Primary Language
-## Status: In progress — Session 15 completed 2026-04-28
+## Status: Completed 2026-04-29 — Week 2 closeout pushed
 ## Environment confirmed: Python 3.12.2 installed ✓
 
 ## Why Python now
@@ -208,7 +208,7 @@ Per curriculum pivot (2026-03-31), Python becomes primary automation + AI langua
 - [~] Python script handles: missing keys, non-200 status, file write errors — strong in drills; POST network-failure handling not fully implemented
 - [x] Can translate JS array methods to Python equivalents (filter→list comp, etc.)
 - [x] Can reimplement Week 1 Exercise 03 in Python independently
-- [ ] **GitHub portfolio: push Week 1 + Week 2 deliverables with README** (per curriculum pivot)
+- [x] **GitHub portfolio: push Week 1 + Week 2 deliverables with README** (pushed 2026-04-29)
 
 ## Peripheral exposure for Week 2 (seen, not tested)
 - Type hints: `def foo(x: int) -> str:`
@@ -671,6 +671,6 @@ If pace is faster, collapse sessions; if slower, extend. Do not skip Block C dep
 3. Optional stronger `requests.post(...)` error handling once network access is available
 
 ### Immediate next step after Session 15
-1. Finish Git / portfolio closeout for Week 1 + Week 2
-2. Once deliverables are pushed, mark Week 2 complete
-3. Then start Week 3 SQL Deep Dive
+1. Start Week 3 SQL Deep Dive
+2. Keep Week 2 drills available for spaced review as needed
+3. Use Week 2 artifacts as reference when SQL work begins to touch files, APIs, and pipelines again
