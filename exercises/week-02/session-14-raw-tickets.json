@@ -1,0 +1,8 @@
+[
+  { "id": "T-101", "owner": " Alice ", "team": "integrations", "priority": "high", "status": "open" },
+  { "id": "T-102", "owner": "", "team": "ops", "priority": "urgent", "status": "open" },
+  { "id": "T-103", "owner": "Ben", "team": "ops", "priority": "low", "status": "open" },
+  { "id": "T-104", "owner": "Cara", "team": "integrations", "priority": "urgent", "status": "closed" },
+  { "id": "T-105", "owner": " Dan", "team": "platform", "priority": "urgent", "status": "open" },
+  { "id": "T-106", "owner": "Eve", "team": "ops", "priority": "high", "status": "open" }
+]

@@ -1,0 +1,33 @@
+{
+  "tickets": [
+    {
+      "id": "T-101",
+      "owner": "alice",
+      "team": "integrations",
+      "priority": "high"
+    },
+    {
+      "id": "T-105",
+      "owner": "dan",
+      "team": "platform",
+      "priority": "urgent"
+    },
+    {
+      "id": "T-106",
+      "owner": "eve",
+      "team": "ops",
+      "priority": "high"
+    }
+  ],
+  "summary": {
+    "ticketCount": 3,
+    "byTeam": {
+      "integrations": 1,
+      "platform": 1,
+      "ops": 1
+    },
+    "urgentIds": [
+      "T-105"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+[
+  { "id": "O1", "customer": "Alice", "amount": 120, "status": "paid" },
+  { "id": "O2", "customer": "Bob", "amount": 80, "status": "pending" },
+  { "id": "O3", "customer": "Carol", "amount": 240, "status": "paid" },
+  { "id": "O4", "customer": "Dan", "amount": 45, "status": "paid" },
+  { "id": "O5", "customer": "Eve", "amount": 300, "status": "cancelled" }
+]

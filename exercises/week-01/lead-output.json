@@ -1,0 +1,31 @@
+{
+  "leads": [
+    {
+      "name": "Alice Chen",
+      "email": "alice@acme.com",
+      "company": "Acme Corp",
+      "score": 85
+    },
+    {
+      "name": "Dan Lee",
+      "email": "dan@acme.com",
+      "company": "Acme Corp",
+      "score": 91
+    },
+    {
+      "name": "Frank Wu",
+      "email": "frank@testco.com",
+      "company": "TestCo",
+      "score": 55
+    }
+  ],
+  "summary": {
+    "totalLeads": 3,
+    "averageScore": 77,
+    "companyCounts": {
+      "Acme Corp": 2,
+      "TestCo": 1
+    },
+    "topLead": "Dan Lee"
+  }
+}

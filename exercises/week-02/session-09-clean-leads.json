@@ -1,0 +1,46 @@
+{
+  "leads": [
+    {
+      "name": "Alice Chen",
+      "email": "alice@example.com",
+      "score": 92,
+      "tier": "A"
+    },
+    {
+      "name": "Carol Wong",
+      "email": "carol@example.com",
+      "score": 78,
+      "tier": "B"
+    },
+    {
+      "name": "David Lee",
+      "email": "david@example.com",
+      "score": 88,
+      "tier": "A"
+    },
+    {
+      "name": "Frank Wu",
+      "email": "frank@example.com",
+      "score": 95,
+      "tier": "A"
+    },
+    {
+      "name": "Grace Liu",
+      "email": "grace@example.com",
+      "score": 60,
+      "tier": "B"
+    },
+    {
+      "name": "Henry Kim",
+      "email": "henry@example.com",
+      "score": 82,
+      "tier": "A"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "avg_score": 82.5,
+    "top_score": 95,
+    "low_score": 60
+  }
+}

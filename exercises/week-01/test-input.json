@@ -1,0 +1,7 @@
+{
+  "company": "Acme Corp",
+  "employees": [
+    { "name": "Alice", "role": "engineer" },
+    { "name": "Bob", "role": "designer" }
+  ]
+}

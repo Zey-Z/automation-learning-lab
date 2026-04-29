@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Alice Chen",
+    "email": "alice@acme.com",
+    "group": "B"
+  },
+  {
+    "name": "",
+    "email": "ghost@nowhere.com",
+    "group": "A"
+  },
+  {
+    "name": "Carol Park",
+    "email": "carol@big.co",
+    "group": "C"
+  },
+  {
+    "name": "Dan Lee",
+    "email": "dan@acme.com",
+    "group": "A"
+  },
+  {
+    "name": "Grace Li",
+    "email": "grace@big.co",
+    "group": "A"
+  }
+]

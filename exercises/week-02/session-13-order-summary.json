@@ -1,0 +1,8 @@
+{
+  "paidCount": 3,
+  "totalAmount": 405,
+  "highValueCustomers": [
+    "Alice",
+    "Carol"
+  ]
+}
